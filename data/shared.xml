@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config version="1.0" serial="21" timestamp="1407442821.24">
+  <UI>
+    <Installed>2</Installed>
+    <Language>en</Language>
+    <Pos>
+      <Height>251</Height>
+      <Width>240</Width>
+      <X>1665</X>
+      <Y>757</Y>
+    </Pos>
+    <API>
+      <Authorizations>Skype4Py</Authorizations>
+      <BlockedPrograms></BlockedPrograms>
+    </API>
+  </UI>
+</config>
