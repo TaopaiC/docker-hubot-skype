@@ -27,9 +27,13 @@ WORKDIR hubot-skype
 RUN pip install Skype4Py
 RUN npm install && npm install --save git://github.com/netpro2k/hubot-skype.git
 ENV HUBOT_NAME hubot
+# ENV SKYPE_USERNAME
+# ENV SKYPE_PASSWORD
 ADD data/shared.xml /.Skype/shared.xml
 ADD data/hubot-run.sh /hubot-skype/hubot-run.sh
 ADD hubot-scripts.json /hubot-skype/hubot-scripts.json
+VOLUME ["/var/lib/redis"]
+EXPOSE 8080
 
 ONBUILD ADD hubot-scripts.json /hubot-skype/hubot-scripts.json
 ONBUILD ADD dep.txt /hubot-skype/dep.txt
